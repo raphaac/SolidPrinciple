@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace SolidConcepts.Entities
 {
@@ -42,16 +41,7 @@ namespace SolidConcepts.Entities
             foreach (var item in itemWithTax)
             {
                 if (item.GetType() == typeof(TaxItem))
-                {
                     taxes += item.CalculateTaxes();
-                }
-
-                //taxes = 1;
-
-                //if (typeof(TaxItem).IsInstanceOfType(item))
-                //{
-                //    taxes += item.CalculateTaxes();
-                //}
             }
 
             return taxes;

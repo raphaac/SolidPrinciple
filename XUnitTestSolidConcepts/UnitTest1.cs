@@ -15,9 +15,9 @@ namespace XUnitTestSolidConcepts
         {
             var order = new Order();
 
-            order.AddItem(new Cigar("Holly", 10));
-            order.AddItem(new Beer("Black", 5));
-            order.AddItem(new Water("Liquid", 2));
+            order.AddItem(new Cigar("Malboro", 10));
+            order.AddItem(new Beer("Brahma", 5));
+            order.AddItem(new Water("Sao Lourenço", 2));
 
             var subTotal = order.GetSubtotal();
             
@@ -29,9 +29,9 @@ namespace XUnitTestSolidConcepts
         {
              var order = new Order();
 
-            order.AddItem(new Cigar("Holly", 10));
-            order.AddItem(new Beer("Black", 5));
-            order.AddItem(new Water("Liquid", 2));
+            order.AddItem(new Cigar("Malboro", 10));
+            order.AddItem(new Beer("Brahma", 5));
+            order.AddItem(new Water("Sao Lourenço", 2));
 
             var taxes = order.GetTaxes();
 
@@ -43,9 +43,9 @@ namespace XUnitTestSolidConcepts
         {
             var order = new Order();
 
-            order.AddItem(new Cigar("Holly", 10));
-            order.AddItem(new Beer("Black", 5));
-            order.AddItem(new Water("Liquid", 2));
+            order.AddItem(new Cigar("Malboro", 10));
+            order.AddItem(new Beer("Brahma", 5));
+            order.AddItem(new Water("Sao Lourenço", 2));
 
             var total = order.GetTotal();
 
